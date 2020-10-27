@@ -27,7 +27,7 @@ def main():
     if munich != None:
         change = munich.findNext("td").findNext("td")
         average=change.findNext("td").findNext("td").findNext("td")
-        print("Munich 7-day average %s, diff %s" %(re.sub(r"\s+", "", average.text), re.sub(r"\s+", "", change.text)))
+        print("Munich 7-day average %s, today´s increase %s" %(re.sub(r"\s+", "", average.text), re.sub(r"\s+", "", change.text)))
     else: 
         print("Error, Munich row not found")
     print("##############################")
